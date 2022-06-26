@@ -1,1 +1,11 @@
+
 # EstrogenSearch
+Estrogen Search is a basic search engine made for fun without any tracking or nasty features that invade user privacy. 
+Although it does not support many basic features, given enough time, it should be able to become somewhat usable. 
+It should also be noted that the database is ***very*** large, and only a few hundred sites can cause the database to 
+swell up to 100MB, so if you are planning to make it usable, either limit the crawler or have a very large disk + RAM
+
+Requirments are beautifulsoup4, requests, along with flask. Requires Python 3.10+
+To start the **main server**, run `main.py` and let it sit in the background
+To start the **crawler**, run ./startcrawl.py. The program should give some basic information, such as # of sites crawler
+and the URL of the crawled website.

@@ -5,11 +5,7 @@ import requests
 import validators
 
 from engineserver import indexdata, cleanup
-
 from bs4 import BeautifulSoup
-from urllib import robotparser
-from urllib.parse import urlparse
-from collections import defaultdict
 
 class WebCrawler:
     def __init__(self) -> None:

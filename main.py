@@ -27,8 +27,6 @@ def index():
 
 
         for current_page in results[0]:
-            print(current_page)
-            print(data_pros[current_page])
             data[current_page] =  data_pros[current_page]
 
         return render_template("search.html", results=results, length=len(results), data=data)
