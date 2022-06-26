@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estrogenized Search</title>
+    
+    
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        
+    </head>
+    <body>
+        <div class="align-center">
+            <img class="logo" src="/static/search.png">
+            <form action="/" method="POST">
+                <input type="text" placeholder="Search for..." name="query"><br>
+                <input type="hidden" value="1">
+                <!--
+                <label class="collapse" for="settings">advanced options</label>
+                <input type="checkbox" id="settings">
+                <div>
+                    <fieldset id="adv">
+                        <ul class="advanced-settings">
+                            <li>
+                                <input type="radio" id="gen" name="adv">
+                                <label for="gen">General</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="img" name="adv">
+                                <label for="img">Images</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="vid" name="adv">
+                                <label for="vid">Video</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="news" name="adv">
+                                <label for="news">News</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="files" name="adv">
+                                <label for="files">Files</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                -->
+            </form>
+        </div>
+    </body>
+</html>

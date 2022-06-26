@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    </head>
+    <body>
+        <form action="/" method="POST">
+            <input type="text" placeholder="Search for..." name="query", width="50ch"><br>
+        </form>
+        <hr>
+        {% if length > 0 %}
+            {% for url in results[0] %}
+                <div class="page">
+                    <a class="page-name" href="{{ url }}">{{ data[url]["title"].replace("%20", " ") }}</a>
+                    <p class="page-desc">{{ data[url]["desc"].replace("%20", " ") }}</p>
+
+                    <br>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No results have been found 😔</p>
+        {% endif %}
+    </body>
+</html>
